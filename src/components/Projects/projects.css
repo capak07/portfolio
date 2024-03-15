@@ -1,0 +1,36 @@
+  
+  
+
+  .project-section {
+    display: inline-flex;
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+  }
+
+  .project-card {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    height: auto !important;
+    width: 300px !important;
+  }
+  
+  .project-card-view {
+    box-shadow: 0 4px 5px 3px #6666c5 !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .project-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px whitesmoke !important;
+  }

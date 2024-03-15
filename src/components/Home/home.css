@@ -1,0 +1,105 @@
+/* home.css */
+
+.data-theme {
+    --background: oklch(17.76% 0 0);
+    --backgroundLight: oklch(21.78% 0 0);
+    --primary: oklch(84.42% 0.19 202.24);
+    --accent: oklch(84.42% 0.19 202.24);
+    --error: oklch(65.91% 0.249 13.76);
+    --text: var(--white);
+    --textTitle: var(--text);
+    --textBody: color-mix(in lab, var(--text) 80%, transparent);
+     --textLight: color-mix(in lab, var(--text) 60%, transparent);
+}
+
+.wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.1s; 
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+
+.font-face {
+    font-family: Gotham;
+    font-weight: 400;
+    src: format('woff2');
+    font-display: block;
+    font-style: normal;
+    font-size: 30px;
+    padding-bottom: 15;
+    text-align: "center"
+}
+
+
+.home-section {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 30px;
+    font-family: var(--fontStack);
+    font-weight: var(--fontWeightRegular);
+    transition: var(--durationM) ease;
+    transition-property: background, opacity;
+    color: whitesmoke;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 30px;
+
+}
+
+ .home-header {
+    padding-top: 80px !important;
+    justify-items: center;
+  }
+  
+
+.home-about-section {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 30px;
+    font-family: var(--fontStack);
+    font-weight: var(--fontWeightRegular);
+    transition: var(--durationM) ease;
+    transition-property: background, opacity;
+    color: whitesmoke;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 20px;
+}
+
+.home-about-social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: var(--fontStack);
+    font-weight: var(--fontWeightRegular);
+    transition: var(--durationM) ease;
+    transition-property: background, opacity;
+    color: whitesmoke;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    justify-self: start;
+    padding-left: 10px;
+}
+
+ .Typewriter__wrapper {
+    font-size: 1.0em !important;
+    color: #be6adf !important;
+    font-weight: 600 !important;
+  }
+  .Typewriter__cursor {
+    font-size: 1.0em !important;
+    color: #b562d6 !important;
+  }
