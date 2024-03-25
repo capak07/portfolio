@@ -14,17 +14,20 @@
     padding-bottom: 50px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
-    height: auto !important;
+    height: 100%;
     width: 300px !important;
   }
   
   .project-card-view {
+    display: flex !important;
+    flex-direction: column !important;
     box-shadow: 0 4px 5px 3px #6666c5 !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
     height: 100% !important;
+    width: -webkit-fill-available !important;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -33,4 +36,8 @@
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px whitesmoke !important;
+  }
+
+  .purple {
+    color: #6666c5 !important;
   }

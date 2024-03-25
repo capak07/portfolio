@@ -1,33 +1,75 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import pdf from "../../Assets/../Assets/Atharva Kadam - Resume.pdf";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
+import "react-vertical-timeline-component/style.min.css";
 import "./Resume.css";
+import { experiences } from "./Constants";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-
-function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
+const ExperienceCard = ({ experience }) => {
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
-            <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-      </Container>
-    </div>
-  );
-}
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "#1d1836",
+        color: "#fff",
+        height: "100%",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      date={
+        experience.date
+      }
+      iconStyle={{ background: experience.iconBg, height: "16.5%", width: "5%"}}
+      icon={
+        <div className='exp-card'>
+          <img
+            src={experience.icon}
+            alt={experience.company_name}
+            className='logo w-[90%] h-[90%] object-contain'
+          />
+        </div>
+      }
+    >
+      <div>
+        <h3 className='title'>{experience.title}</h3>
+        <p
+          className='pbody'
+          style={{ margin: 0 }}
+        >
+          {experience.company_name}
+        </p>
+      </div>
 
-export default ResumeNew;
+      <ul className='experience'>
+        {experience.points.map((point, index) => (
+          <li
+            key={`experience-point-${index}`}
+            className='points'
+          >
+            {point}
+          </li>
+        ))}
+      </ul>
+    </VerticalTimelineElement>
+  );
+};
+
+const Experience = () => {
+  return (
+    <>
+      <div className='exp'>
+        <VerticalTimeline>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
+      </div>
+    </>
+  );
+};
+
+export default Experience;

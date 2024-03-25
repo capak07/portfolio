@@ -7,7 +7,7 @@ import "./projects.css";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" width={"200px"} height={"200px"} style={{paddingTop: "20px"}} />
+      <Card.Img variant="top" src={props.imgPath} alt="card-img" width={"200px"} height={"200px"} style={{paddingTop: "20px", paddingLeft: "47px"}} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>
