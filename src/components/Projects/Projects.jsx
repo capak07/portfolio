@@ -13,7 +13,7 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ display: "flex", paddingBottom: "10px" }}>
+        <Row style={{ display: "inline-flex", flexDirection: "row", paddingBottom: "50px" }}>
           <Col className="project-card">
             <ProjectCard
               imgPath={require("../../Assets/Projects/web-app.png")}
@@ -57,13 +57,55 @@ function Projects() {
         <h1 className="project-heading">
           My <strong className="purple"> Open Source </strong> Contributions
         </h1>
-        <Row style={{ display: "inline-flex", flexDirection: "row", paddingBottom: "50px" }}>
+        <Row style={{ display: "inline-flex", flexDirection: "row", paddingBottom: "20px" }}>
         <Col className="project-card">
             <ProjectCard
               isBlog={false}
               title="movie-web"
               description="Package that contains all the providers of movie-web"
               ghLink="https://github.com/movie-web/providers"
+            />
+          </Col>
+          <Col className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="Sympy"
+              description="A computer algebra system written in pure Python"
+              ghLink="https://github.com/sympy/sympy"
+            />
+          </Col>
+          <Col className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="langchain"
+              description="https://github.com/patterns-ai-core/langchainrb"
+              ghLink="Build LLM-backed Ruby applications"
+            />
+          </Col>
+          <Col className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="gson"
+              description="Library to convert Java Objects into JSON and back"
+              ghLink="https://github.com/google/gson"
+            />
+          </Col>
+          <Col className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="duckdb"
+              description="DuckDB is an in-process SQL OLAP Database Management System"
+              ghLink="https://github.com/duckdb/duckdb"
+            />
+          </Col>
+        </Row>
+        <Row style={{ display: "inline-flex", flexDirection: "row", paddingBottom: "20px" }}>
+          <Col className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="exa"
+              description="A modern replacement for ‘ls’."
+              ghLink="https://github.com/ogham/exa"
             />
           </Col>
         </Row>

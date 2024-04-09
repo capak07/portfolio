@@ -15,7 +15,7 @@
       ],
     },
     {
-      title: "Full stack Developer",
+      title: "Software Developer",
       company_name: "Github - Freelance",
       icon: github,
       iconBg: "#383E56", 
