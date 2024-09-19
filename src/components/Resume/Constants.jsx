@@ -6,7 +6,7 @@
       company_name: "Introhive - Part Time",
       icon: introhive,
       iconBg: "#383E56",
-      date: "April 2023 - Present",
+      date: "April 2023 - May2024",
       points: [
         "DBT Snowflake - Building UDFs and Macros",
         "TypeScript - Built new features.",

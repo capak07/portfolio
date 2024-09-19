@@ -63,7 +63,8 @@ function Projects() {
               isBlog={false}
               title="movie-web"
               description="Package that contains all the providers of movie-web"
-              ghLink="https://github.com/movie-web/providers"
+              ghLink="https://github.com/TGlide/movie-web"
+              imgPath="https://avatars.githubusercontent.com/u/26071571?s=48&v=4"
             />
           </Col>
           <Col className="project-card">
@@ -72,6 +73,7 @@ function Projects() {
               title="Sympy"
               description="A computer algebra system written in pure Python"
               ghLink="https://github.com/sympy/sympy"
+              imgPath="https://avatars.githubusercontent.com/u/260832?s=48&v=4"
             />
           </Col>
           <Col className="project-card">
@@ -80,6 +82,7 @@ function Projects() {
               title="langchain"
               description="https://github.com/patterns-ai-core/langchainrb"
               ghLink="Build LLM-backed Ruby applications"
+              imgPath="https://avatars.githubusercontent.com/u/166417795?s=48&v=4"
             />
           </Col>
           <Col className="project-card">
@@ -88,24 +91,27 @@ function Projects() {
               title="gson"
               description="Library to convert Java Objects into JSON and back"
               ghLink="https://github.com/google/gson"
+              inPath="https://avatars.githubusercontent.com/u/1342004?s=48&v=4"
             />
           </Col>
-          <Col className="project-card">
+        </Row>
+        <Row style={{ display: "inline-flex", flexDirection: "row", paddingBottom: "20px" }}>
+        <Col className="project-card">
             <ProjectCard
               isBlog={false}
               title="duckdb"
               description="DuckDB is an in-process SQL OLAP Database Management System"
               ghLink="https://github.com/duckdb/duckdb"
+              imgPath= "https://avatars.githubusercontent.com/u/82039556?s=48&v=4"
             />
           </Col>
-        </Row>
-        <Row style={{ display: "inline-flex", flexDirection: "row", paddingBottom: "20px" }}>
           <Col className="project-card">
             <ProjectCard
               isBlog={false}
               title="exa"
-              description="A modern replacement for ‘ls’."
+              description="exa is a modern replacement for the 'ls' command-line program"
               ghLink="https://github.com/ogham/exa"
+              imgPath="https://avatars.githubusercontent.com/u/503760?s=48&v=4"
             />
           </Col>
         </Row>
